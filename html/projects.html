@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Projects</h1>
+    </header>
+    <br>
+    <p>
+        Below are a few of my more recent projects that I am particularly proud of. 
+        If you want to browse the source code for any of my projects, they can all be found on my <a href="https://github.com/Tyler-Culp" target="_blank" rel="noopener">GitHub here</a>.
+    </p>    
+    <section class="project">
+        <h3>Pcap Tracker</h3>
+        <p><a href="https://github.com/Tyler-Culp/local_packet_tracker" target="_blank" rel="noopener">link</a></p>
+        <p>
+            The goal of this project was to create a service that analyzes network traffic from different devices. 
+            Initially inspired by a curiosity about smart home device traffic, it evolved into a tool that visualizes network activity for any device of interest.  
+            Users can upload a PCAP (packet capture) file and specify an IP or MAC address to analyze, then view visualizations of traffic volume over time, 
+            communication partners, and geographic destinations.  
+            The application is live at <a href="https://pcaptracker.site" target="_blank" rel="noopener">https://pcaptracker.site</a>, 
+            or users can run it locally via Docker by cloning the GitHub repo.
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Developed custom Python scripts using the Scapy library for packet analysis</li>
+            <li>Utilized multithreading to optimize PCAP processing, ensuring efficient large file analysis</li>
+            <li>Created interactive data visualizations using D3.js to display network traffic insights</li>
+            <li>Built a responsive front-end using HTML, CSS, and JavaScript, hosted on a Linux cloud server</li>
+            <li>Implemented a Flask middleware, served with Gunicorn, to handle requests between the frontend and backend</li>
+            <li>Configured Apache as a reverse proxy to Flask, ensuring secure and scalable deployment</li>
+            <li>Packaged the application with Docker for simplified deployment and local execution</li>
+        </ul>
+    </section>  
+    <section class="project">
+        <h3>Jit (Java Git)</h3>
+        <p><a href="https://github.com/Tyler-Culp/Java_Git" target="_blank" rel="noopener">GitHub Repo</a></p>
+        <p>
+            A recreation of the Git version control software built from scratch in Java using Gradle for consistent and quick builds.
+            I developed this project to explore how Git operates internally and interacts with the file system.
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Implemented in Java and built using Gradle for efficient and reliable builds</li>
+            <li>Supports basic Git operations: status, add, commit, log, checkout</li>
+            <li>Tested with JUnit and Mockito to ensure functionality</li>
+            <li>Implemented a CI/CD pipeline for automated testing on code pushed</li>
+        </ul>
+    </section>
+    <section class="project">
+        <h3>Few-Shot ML Pneumonia Classifier</h3>
+        <p><a href="https://github.com/Tyler-Culp/Few-Shot-Pneumonia-ML-Model" target="_blank" rel="noopener">GitHub Repo</a></p>
+        <p>
+            A major challenge in medical machine learning is acquiring large, high-quality datasets for training models.
+            To address this, my team and I developed a few-shot learning model that requires significantly fewer images to train while maintaining high accuracy.
+            Our model needed only ~50 images to achieve ~88% accuracy, compared to conventional models requiring thousands.
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Utilized common Python ML libraries including NumPy, TensorFlow, Keras, and Pandas</li>
+            <li>Built a ResNet-based ML model optimized for low-data scenarios</li>
+            <li>Achieved 98% of the performance of a standard model trained on ~3000 images</li>
+        </ul>
+    </section>
+    <section class="project">
+        <h3>Social Compass Android App</h3>
+        <p><a href="https://github.com/Tyler-Culp/Social-Compass-2" target="_blank" rel="noopener">GitHub Repo</a></p>
+        <p>
+            Developed an Android application in a team of six using Agile development practices.
+            The app allows users to add friends via unique codes and track their real-time locations on a dynamic compass UI.
+            Friend locations update continuously as they move throughout the day, with data synchronized via a cloud-hosted AWS SimpleDB server.
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Built with Java in Android Studio, utilizing Gradle for consistent builds</li>
+            <li>Implemented real-time location tracking with live updates from a cloud-hosted database</li>
+            <li>Designed a compass-based UI that dynamically rotates based on user movement</li>
+            <li>Added zoom functionality to adjust the view based on friend proximity</li>
+            <li>Ensured continuous background location updates for seamless tracking</li>
+            <li>Implemented a CI/CD pipeline for automated testing on code pushed</li>
+        </ul>
+    </section>
+</body>
+</html>
